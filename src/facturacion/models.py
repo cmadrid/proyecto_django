@@ -20,5 +20,5 @@ class Item(models.Model):
     descripcion     = models.CharField(max_length=200)
     es_bien         = models.BooleanField(initial=False)
     es_servicio     = models.BooleanField(initial=False)
-    pct_utilidad    = models.FloatField()
+   
     
