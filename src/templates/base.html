@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="es">
+<head>
+    <title> {% block title %} Titulo Base {% endblock %}</title>
+</head>
+<body>
+<header>
+<h1>Proyecto de Contabilidad - Django</h1>
+<nav>
+	<a href="#"> Inicio </a>
+	<a href="#"> Facturacion </a>
+	<a href="#"> Contabilidad </a>
+	<a href="#"> Procesos Varios </a>
+	<a href="#"> Acerca de </a>
+	<a href="{% url 'vista_login' %}"> Login </a>
+</nav>
+</header>
+
+<section>
+	{% block content %}
+	{% endblock %}
+</section>
+
+</body>
+</html>
